@@ -14,6 +14,7 @@
      background: #00DAFF;
      height: 15vh;
      
+     
      }
   
   .nav {
@@ -21,7 +22,7 @@
      background: #00DAFF; 
      text-align: center;
      font-family: 'Agency FB', sans-serif;
-     width: 250px;
+     
      height: 85vh;
      
     }
@@ -43,10 +44,8 @@
     }
 
     .headerimg {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
+      float: left;
+      width: 30%;
     }
 
     body {
@@ -56,6 +55,10 @@
     .navtext {
       color: white;
       font-size: 14pt;
+    }
+
+    .navlinks {
+      text-decoration: none;
     }
 
    

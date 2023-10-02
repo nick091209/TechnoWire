@@ -13,8 +13,6 @@
      grid-area: header;
      background: #00DAFF;
      height: 15vh;
-     
-     
      }
   
   .nav {
@@ -22,7 +20,6 @@
      background: #00DAFF; 
      text-align: center;
      font-family: 'Agency FB', sans-serif;
-     
      height: 85vh;
      
     }
@@ -61,7 +58,7 @@
       text-decoration: none;
     }
 
-   
+  
 
 
 

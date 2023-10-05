@@ -1,0 +1,48 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
+    grid-template-rows: 0.4fr 1.2fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "info info info nav"
+      "foto1 foto2 foto3 nav";
+  }
+  
+  .header {
+     grid-area: header;
+     background: #00DAFF;
+     height: 15vh;
+     }
+  
+  .nav {
+     grid-area: nav;
+     background: #00DAFF; 
+     text-align: center;
+     font-family: 'Agency FB', sans-serif;
+     font-size: 30px;
+     height: 85vh;
+     
+    }
+  
+  
+
+    .headerimg {
+      float: left;
+      width: 30%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .navtext {
+      color: white;
+      font-size: 14pt;
+    }
+
+    .navlinks {
+      text-decoration: none;
+    }
+
+   

@@ -1,13 +1,20 @@
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
-    grid-template-rows: 0.4fr 1.2fr 1.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header header header"
-      "info info info nav"
-      "foto1 foto2 foto3 nav";
-  }
+  grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
+  grid-template-rows: 0.4fr 1.2fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header header"
+    "gallery gallery gallery nav"
+    "gallery gallery gallery nav";
+}
+
+.nav { grid-area: nav; }
+
+.header { grid-area: header; }
+
+.gallery { grid-area: gallery; }
+
   
   .header {
      grid-area: header;
@@ -45,4 +52,38 @@
       text-decoration: none;
     }
 
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
    

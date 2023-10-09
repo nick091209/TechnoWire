@@ -32,7 +32,8 @@
      margin-right: 10px;
      font-size: 14pt;
     }
-  
+
+   
   .foto1 {
      grid-area: foto1; 
      height: 19em;
@@ -62,6 +63,7 @@
     
     .foto1:hover {
       transform: scale(1.05);
+      
     }
 
     
@@ -93,6 +95,8 @@
     .navlinks {
       text-decoration: none;
     }
+
+
 
    
 

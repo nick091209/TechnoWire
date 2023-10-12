@@ -162,47 +162,49 @@
   right: -117px;
 }
 
+
 .img-hof {
-  height: 100px;
+  height: 150px;
   float: right;
+  margin-right: 10px;
+  margin-top: -180px;
+}
+
+.img-hof2 {
+  height: 130px;
+  float: right;
+  margin-right: 0px;
+  margin-top: -165px;
+}
+
+.img-hof3 {
+  height: 130px;
+  float: right;
+  margin-right: 5px;
   margin-top: -120px;
 }
 
-.img-anders1 {
-  height: 100px;
+.img-hof4 {
+  height: 130px;
   float: right;
+  margin-right: 5px;
   margin-top: -160px;
 }
 
-
-.img-anders2 {
-  height: 100px;
+.img-hof5 {
+  height: 130px;
   float: right;
-  margin-top: -125px;
-}
-
-.img-anders3 {
-  height: 100px;
-  float: right;
-  margin-top: -140px;
-}
-
-.img-anders4 {
-  height: 100px;
-  float: right;
+  margin-right: 5px;
   margin-top: -155px;
 }
 
-.img-anders5 {
-  height: 100px;
-  float: right;
-  margin-top: -150px;
+.tr {
+  line-height: 10px;
 }
 
 .text-hof {
   text-align: left;
-  margin-right: 120px;
-  
+  margin-right: 220px;
 }
 
 .tijd-odd {
@@ -211,7 +213,8 @@
   transform: translateY(-50%);
   margin: 0;
   margin-top: -20px;
-  left: -59px;
+  font-size: 16pt;
+  left: -80px;
 }
 
 .tijd-even {
@@ -220,7 +223,28 @@
   transform: translateY(-50%);
   margin: 0;
   margin-top: -20px;
-  right: -59px;
+  font-size: 16pt;
+  right: -83px;
+ }
+
+ .tijd-even2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  margin-top: -20px;
+  font-size: 16pt;
+  right: -80px;
+ }
+
+ .tijd-even3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  margin-top: -20px;
+  font-size: 16pt;
+  right: -83px;
  }
 .timeline {
   position: relative;
@@ -239,7 +263,7 @@
 .navtext:hover {
   color: darkblue;
 }
+
 .navtext-bovenste:hover {
   color: darkblue;
 }
-

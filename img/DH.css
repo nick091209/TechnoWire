@@ -307,21 +307,24 @@
   height: 100%;
   background: black;
 }
+.timeline .checkpoint {
+  box-sizing: border-box;
+  width: 150px;
+  padding-left: -50px;
+  position: relative;
+}
 
+.timeline .checkpoint > div {
+  border: 3px solid black;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
 .text-hof {
   text-align: right;
   margin-right: 0px;
   
-}
-.timeline .checkpoint:nth-child(odd) {
-  margin-left: 250px;
-  width: 350px;
-  height: 500px;
-}
-.timeline .checkpoint:nth-child(even) {
-  margin-left: 250px;
-  width: 350px;
-  height: 500px;
 }
 }
 

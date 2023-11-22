@@ -264,14 +264,20 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 80%;
+      width: 55%;
   }
+
+  .header {
+    width: 100vh;
+  }
+
 
 
 
   .title {
     text-align: center;
     margin-top: 0px;
+    max-width: 85%;
 }
 
 .title p {
@@ -281,18 +287,22 @@
     margin: 25px;
 }
 
+h1 {
+  margin-top: -500px;
+}
+
 .timeline .checkpoint:nth-child(odd):after {
-  left: -230px;
+  left: -255px;
 }
 .timeline .checkpoint:nth-child(even):after {
-  right: 90x;
+  right: 470px;
 }
   
 .timeline .checkpoint:nth-child(odd):before {
-  left: -245px;
+  left: -255px;
 }
 .timeline .checkpoint:nth-child(even):before {
-  right: 21px;
+  right: 570px;
 }
 .timeline {
   position: relative;
@@ -323,6 +333,13 @@
   width: 350px;
   height: 500px;
 }
+.tijd-odd {
+  left: -195px;
+}
+
+.tijd-even {
+  right: -195px;
+ }
 }
 
 

@@ -52,8 +52,10 @@
 
     body {
         margin: 0;
-        
+        padding: 0;
     }
+
+  
 
     .navtext {
       color: white;
@@ -71,5 +73,153 @@
     .navtext-bovenste:hover {
       color: darkblue;
     }
+
+    .gallery {
+      position: relative;
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'Agency FB', sans-serif;
+      font-size: 14pt;
+      margin-left: 15vh;
+    }
+
+    .bil {
+      height: 200px;
+    }
+
+    .gallery .card {
+      position: relative;
+      max-width: 450px;
+      background: lightblue;
+      margin: 10px;
+      color: white;
+      padding: 15px;
+      display: flex;
+    }
+
+    .gallery .card .imgbx {
+      max-width: 150px;
+      flex: 0 0 150px;
+    }
+
+    .gallery .card .imgbx img {
+      max-width: 100%;
+    }
+
+    .container .card .content {
+      margin-left: 20px;
+    }
+
+    .hamburger{
+      display: none;
+      cursor: pointer;
+    }
+    
+    .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background-color: white;
+    }
+
+    @media(max-width:1024px) {
+      .hamburger{
+        display: block;
+      }
+    
+      .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      
+      .nav {
+        height: 135vh;
+      }
+      .headerimg {
+        float: left;
+        margin-left: 10px;
+        width: 30%;
+        overflow: hidden;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .gallery {
+        flex-direction: column;
+        margin-left: 0;
+        max-width: 100vh;
+      }
+
+      .gallery .card {
+        flex-direction: column;
+        max-width: 350px;
+      }
+
+      .gallery .card .imgbx {
+        max-width: 100%;
+      }
+      
+      .nav {
+        height: 120vh;
+      }
+      .headerimg {
+        float: left;
+        margin-left: 10px;
+        width: 30%;
+        overflow: hidden;
+      }
+    }
+
+
+    @media (max-width: 768px)  {
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.3fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header header"
+    "gallery gallery gallery"
+    "gallery gallery gallery";
+  }
+  
+
+  .nav {
+    display: none;
+  }
+
+  .headerimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      align-items: center;
+  }
+
+  .gallery {
+    margin-top: -1000px;
+  }
+  
+}
+
+
+
+
+
+   
 
     
